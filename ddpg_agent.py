@@ -13,9 +13,9 @@ import torch.optim as optim
 BUFFER_SIZE = int(1e5)  # Replay Buffer Size
 BATCH_SIZE = 128        # Minibatch Size
 GAMMA = 0.99            # Discount Factor
-TAU = 0.00015             # For Soft Update Of Target Parameters
-LR_ACTOR = 0.0003         # Actor Learning Rate
-LR_CRITIC = 0.00005        # Critic Learning Weight
+TAU = 0.00015           # For Soft Update Of Target Parameters
+LR_ACTOR = 0.0003       # Actor Learning Rate
+LR_CRITIC = 0.00005     # Critic Learning Weight
 WEIGHT_DECAY = 0        # L2 Weight Decay
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
